@@ -1,0 +1,32 @@
+.desc, .thumb2 {
+	display: block;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.desc {
+	padding: 10px;
+	
+}
+
+.thumb2 {
+	float: left;
+	margin-right: 20px;
+}
+
+.thumb {
+	display: none;
+}
+
+article.god {
+	cursor: default;
+	
+}
+
+article.god:hover {
+	transform: scale(1.0);
+}
+
+a.other-gods {
+	margin-top: 20px;
+}

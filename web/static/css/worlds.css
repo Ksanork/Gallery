@@ -1,0 +1,44 @@
+header {
+    background-image: url("../img/world-bg1.jpg");
+}
+
+#noscript-gallery {
+	display: none;
+}
+
+#gallery, #noscript-gallery {
+	margin: 0 auto;
+	width: 90%;
+	padding-top: 50px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#gallery img:not(#open), #noscript-gallery img {
+	display: inline-block;
+	position: relative;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 200px;
+	cursor: pointer;
+}
+
+#open {
+	position: fixed;
+	z-index: 4;
+	width: 200px;
+	cursor: pointer;
+}
+
+#left-nav, #right-nav {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	z-index: 3;
+	cursor: pointer;
+}
+
+footer {
+    background-image: url("../img/world-bg2.jpg");
+}
+

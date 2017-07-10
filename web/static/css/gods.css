@@ -1,0 +1,135 @@
+header {
+    background-image: url("../img/gods/gods.jpg");
+}
+
+article.god {
+	padding: 0 !important;
+	display: inline-block;
+	margin-right: 40px;
+	
+	cursor: pointer;
+	
+	transform: scale(1.0);
+	transition: transform 300ms;
+}
+
+article.god:hover {
+	transform: scale(1.1);
+}
+
+article h2 {
+    color: rgba(41, 111, 239);
+    font-size: 2em;
+    padding: 0%;
+    margin-top: 10px;
+}
+
+article p {
+    font-size: 0.8em;
+    
+}
+
+a.other-gods {
+	display: block;
+	
+	font-size: 1.5em;
+	color: #008EFC;
+	font-weight: bold;
+	font-family: 'Candara';
+	text-decoration: none;
+	transform: scale(1.0);
+	width: 60%;
+	
+	margin: 0 auto;
+	
+	transition: transform 300ms;
+}
+
+a.other-gods:hover {
+	transform: scale(1.1);
+}
+
+a.other-gods img {
+	width: 100px;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+footer {
+    background-image: url("../img/gods/gods2.jpg");
+}
+
+.god-desc {
+	font-size: 1.1em;
+	padding-left: 5%;
+	vertical-align: top;
+}
+
+.desc, .thumb2 {
+	display: none;
+}
+
+#black {
+	opacity: 0.0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	min-height: 100%;
+	background-color: rgba(0,0,0, 0.8);
+	z-index: -1;
+	
+	transition: opacity 800ms;
+}
+
+#black.active {
+	opacity: 1.0;
+}
+
+#close {
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	transform: scale(1.0);
+	cursor: pointer;
+	
+	transition: transform 300ms;
+}
+
+#close:hover {
+	transform: scale(1.2);
+}
+
+.god-window {
+	display: table;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -32%;
+	margin-top: -15%;
+	
+	width: 60%;
+	z-index: 3;
+	background-color: white;
+	padding: 3%;
+	vertical-align: top;
+	opacity: 0.0;
+	
+	transform: translate(0, -100px);
+	
+	transition: opacity 500ms, transform 500ms;
+	
+}
+
+.god-window.active {
+	opacity: 1.0;
+	transform: translate(0, 0);
+}
+
+@media (max-width: 780px) {
+	.god-window {
+		position: absolute;
+		width: 100%
+		left: 0%;
+	}
+}
